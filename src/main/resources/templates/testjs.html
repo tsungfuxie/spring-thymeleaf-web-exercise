@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Add JS to Thymeleaf</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" th:src="@{/js/alert.js}"></script>
+</head>
+<body>
+    <p th:text="'Hello there, ' + ${name} + '!'" />
+    <button type="button" th:onclick="showAlert()">Show Alert</button>
+</body>
+</html>
